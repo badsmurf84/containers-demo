@@ -14,7 +14,7 @@ def get_task_metadata(environment):
       if environment == "ECS":
           response = requests.get('http://169.254.170.2/v2/metadata')
           if response.status_code == 200:
-              return response.content
+              return json.dumps(response.json(), sort_keys = True, indent = 4, separators = (',', ': '))
           else:
               return "The application is running in ECS but it could not connect to the metadata endpoint."
       elif environment == "DOCKER":
