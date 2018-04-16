@@ -1,0 +1,23 @@
+environments:
+- name: acceptance
+  cluster:
+    maxSize: 2
+- name: production
+  cluster:
+    maxSize: 5
+service:
+  port: 8080
+  pathPatterns:
+  - /*
+  pipeline:
+    source:
+      provider: GitHub
+      repo: horsfieldsa/containers-demo
+    build:
+      disabled: false
+
+    notify:
+      - shhorsfi@amazon.com
+
+    tags:
+        environment: containers-demo
