@@ -15,7 +15,7 @@ def get_task_metadata(platform):
       if platform == "ECS":
           response = requests.get('http://169.254.170.2/v2/metadata')
           if response.status_code == 200:
-              data = re.sub('^.*[0-9]{12}.*$', 'REDACTED', json.dumps(response.json(), sort_keys = True, indent = 4, separators = (',', ': ')))
+              data = json.dumps(response.json(), sort_keys = True, indent = 4, separators = (',', ': '))
               return data
           else:
               return "The application is running in ECS but it could not connect to the metadata endpoint."
