@@ -24,31 +24,12 @@
 
 ## Demo 2 - Introduction to ECR and ECS
 
-### Step 1: Push Image to ECR
-
-```
-aws ecr get-login --no-include-email --region us-west-2
-docker tag contaners-demo:latest [YOUR REPO URI]:latest
-docker push [YOUR REPO URI]:latest
-```
-### Step 2: Create ECS Cluster
-### Step 3: Create Task Definition
-### Step 4: Create Task
+TBD
 
 ## Demo 3 - Task Placement and Orchestration
 
-### Step 1: Delete Task
-### Step 2: Create Service
-### Step 3: Configure Service Discovery
-### Step 4: Show Route 53 Service Registration
-### Step 5: Discuss Task Placement (EC2 vs. FARGATE)
+TBD
 
 ## Demo 4 - Continuous Deployment to ECS
 
-### Step 1: Create Deployment Pipeline
-### Step 2: Setup GitHub Source
-### Step 3: New CodeBuild
-* Add Environment Variables(IMAGE_REPO_NAME, AWS_ACCOUNT_ID, AWS_DEFAULT_REGION)
-### Step 4: Deploy to EC2
-* Use Existing Role or Create New Role
-### Step 5: Update CodeBuild Role to add AmazonEC2ContainerRegistryFullAccess Policy
+TBD
