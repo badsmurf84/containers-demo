@@ -19,8 +19,10 @@ def get_task_metadata(platform):
               return data
           else:
               return "The application is running in ECS but it could not connect to the metadata endpoint."
+      else:
+          return "LOCAL and DOCKER environments do not have a task metadata endpoint."
     except:
-      return "APP_ENV is not correctly defined as an environment variable. Ensure APP_ENV is set to LOCAL, DOCKER or ECS."
+      return "An error occured retrieving data from the task metadata endpoint."
 
 def get_platform_message(platform):
     try:
@@ -29,7 +31,9 @@ def get_platform_message(platform):
       elif platform == "LOCAL":
           return "The application is running locally."
       elif platform == "DOCKER":
-          return "The applicatipn is running locally in a container."
+          return "The application is running locally in a container."
+      else:
+          return "APP_ENV is not correctly defined as an environment variable. Ensure APP_ENV is set to LOCAL, DOCKER or ECS."
     except:
       return "APP_ENV is not correctly defined as an environment variable. Ensure APP_ENV is set to LOCAL, DOCKER or ECS."
 
