@@ -17,6 +17,6 @@ service:
       provider: GitHub
       repo: horsfieldsa/containers-demo
     build:
-      disabled: true
+      disabled: false
     notify:
       - shhorsfi@amazon.com
