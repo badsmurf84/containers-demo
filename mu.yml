@@ -7,8 +7,11 @@ environments:
     maxSize: 5
 service:
   port: 5000
+  healthEndpoint: /
   pathPatterns:
   - /*
+  environment:
+    APP_ENV: ECS
   pipeline:
     source:
       provider: GitHub
@@ -17,5 +20,3 @@ service:
       disabled: true
     notify:
       - shhorsfi@amazon.com
-    environment:
-      APP_ENV: ECS
