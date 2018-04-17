@@ -1,10 +1,8 @@
 environments:
-- name: acceptance
-  cluster:
-    maxSize: 2
-- name: production
-  cluster:
-    maxSize: 5
+  - name: acceptance
+    provider: ecs-fargate
+  - name: production
+    provider: ecs-fargate
 service:
   port: 5000
   healthEndpoint: /
