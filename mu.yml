@@ -15,6 +15,7 @@ service:
       repo: horsfieldsa/containers-demo
     build:
       disabled: true
-
     notify:
       - shhorsfi@amazon.com
+    environment:
+      APP_ENV: ECS

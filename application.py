@@ -5,7 +5,6 @@ from flask import jsonify
 import requests
 import os
 import json
-import re
 
 app = Flask(__name__)
 
@@ -20,7 +19,7 @@ def get_task_metadata(platform):
           else:
               return "The application is running in ECS but it could not connect to the metadata endpoint."
       else:
-          return "LOCAL and DOCKER environments do not have a task metadata endpoint."
+          return "Only ECS environments do not have a task metadata endpoint, set with APP_ENV environment variable."
     except:
       return "An error occured retrieving data from the task metadata endpoint."
 
