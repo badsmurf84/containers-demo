@@ -18,7 +18,7 @@ def get_task_metadata(platform):
           else:
               return "The application is running in ECS but it could not connect to the metadata endpoint."
       else:
-          return "Only ECS environments have a task metadata endpoint, set with APP_ENV environment variable."
+          return "Only ECS environments have a task metadata endpoint."
 
 def get_platform_message(platform):
       if platform == "ECS":

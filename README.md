@@ -3,6 +3,7 @@
 ## Run App Locally
 
 ```
+export APP_ENV=LOCAL
 FLASK_APP=application.py flask run
 ```
 
