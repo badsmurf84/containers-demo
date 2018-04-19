@@ -7,6 +7,10 @@
 * Fork Repo (If you want to test CI/CD)
 * Clone Repo Locally
 
+### OAuth Token
+
+* https://github.com/stelligent/devops-essentials/wiki/Prerequisites#create-an-oauth-token-in-github
+
 ### Install Mu: https://github.com/stelligent/mu
 
 ```
