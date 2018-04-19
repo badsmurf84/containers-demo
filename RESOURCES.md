@@ -6,6 +6,11 @@
 * Best Practices for Docker Development: https://docs.docker.com/develop/dev-best-practices/
 * Best Practices for Dockerfiles: https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
 
+## Networking
+
+* Under The Hood - Task Networking for ECS: https://aws.amazon.com/blogs/compute/under-the-hood-task-networking-for-amazon-ecs/
+* Task Networking in ECS Fargate: https://aws.amazon.com/blogs/compute/task-networking-in-aws-fargate/
+
 ## Reference Architectures
 * ECS: https://github.com/aws-samples/ecs-refarch-cloudformation
 * ECS Continuous Deployment: https://github.com/awslabs/ecs-refarch-continuous-deployment

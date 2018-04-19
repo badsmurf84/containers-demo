@@ -23,6 +23,10 @@ curl -s https://getmu.io/install.sh | sudo sh
 pip install -r requirements.txt
 ```
 
+## Install Docker
+
+http://www.docker.com
+
 ### Update mu.yml
 
 ```
@@ -99,6 +103,11 @@ docker run -d -p 5000:5000 -e APP_ENV=DOCKER containers-demo
 
 * Environment Walkthrough
 * Container Images (ECR)
+
+```
+aws ecr describe-images --repository-name mu-containers-demo --region us-east-1
+```
+
 * Task Definitions
 * Services
 * Launch Types: FARGATE vs EC2
