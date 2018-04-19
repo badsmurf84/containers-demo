@@ -24,3 +24,7 @@
 
 ## re:Invent 2017
 * Containers After-Party Recap: https://aws.amazon.com/blogs/compute/the-reinvent-2017-containers-after-party-guide/
+
+## Workshops
+
+* catsndogs.lol http://catsndogs.lol - https://github.com/aws-samples/amazon-ecs-catsndogs-workshop
